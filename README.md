@@ -5,6 +5,12 @@ Hice una mejora importante. Ahora el header ya no está repetido en cada página
 Creé un componente llamado <nav-header> que se carga automáticamente desde JavaScript.
 También organicé el router para que cargue las páginas de forma más limpia.
 
+## Vista del Dashboard
+
+Así se ve la página de inicio después del refactor:
+
+![Header Component](assets/images/Captura.png)
+
 ## Descripción
 - Eliminé el header repetido en cada página HTML
 
