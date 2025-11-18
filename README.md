@@ -7,7 +7,7 @@ También organicé el router para que cargue las páginas de forma más limpia.
 
 ## Vista del Dashboard
 
-Así se ve la página de inicio después del refactor:
+Así se ve la página después del refactor:
 
 ![Header Component](assets/images/Captura.png)
 
