@@ -1,84 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/computadoras.css">
-    <title>Computadoras</title>
-</head>
-<body>
-    <header>
-        <h1>Computadoras</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../computadoras.html">Computadoras</a></li>
-                <li><a href="../laptop.html">Laptops</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Lista de Computadoras</h2>
-            <p>Aquí encontrarás las mejores computadoras disponibles.</p>
-
-            <div class="carrusel">
-                <div class="carrusel-inner">
-                    <div class="carrusel-item active">
-                        <img src="../imagenes/computadora1.png" alt="Computadora 1">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora2.png" alt="Computadora 2">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora3.png" alt="Computadora 3">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora4.png" alt="Computadora 4">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora5.png" alt="Computadora 5">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora6.png" alt="Computadora 6">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora7.png" alt="Computadora 7">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora8.png" alt="Computadora 8">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora9.png" alt="Computadora 9">
-                    </div>
-                    <div class="carrusel-item">
-                        <img src="../imagenes/computadora10.png" alt="Computadora 10">
-                    </div>
+<main>
+    <section>
+        <h2>Lista de Computadoras</h2>
+        <p>Aquí encontrarás las mejores computadoras disponibles.</p
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <div class="carrusel-item active">
+                    <img src="../imagenes/computadora1.png" alt="Computadora 1">
                 </div>
-                <button class="prev" onclick="moveSlide(-1)">❮</button>
-                <button class="next" onclick="moveSlide(1)">❯</button>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora2.png" alt="Computadora 2">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora3.png" alt="Computadora 3">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora4.png" alt="Computadora 4">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora5.png" alt="Computadora 5">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora6.png" alt="Computadora 6">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora7.png" alt="Computadora 7">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora8.png" alt="Computadora 8">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora9.png" alt="Computadora 9">
+                </div>
+                <div class="carrusel-item">
+                    <img src="../imagenes/computadora10.png" alt="Computadora 10">
+                </div>
             </div>
-        </section>
-    </main>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+</main>
 
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carrusel-item');
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = (i === index) ? 'block' : 'none';
-            });
-        }
-
-        function moveSlide(step) {
-            currentSlide = (currentSlide + step + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        // Mostrar el primer slide al cargar
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carrusel-item');
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? 'block' : 'none';
+        });
+    }
+    function moveSlide(step) {
+        currentSlide = (currentSlide + step + slides.length) % slides.length;
         showSlide(currentSlide);
-    </script>
-</body>
-</html>
+    }
+    // Mostrar el primer slide al cargar
+    showSlide(currentSlide);
+</script>

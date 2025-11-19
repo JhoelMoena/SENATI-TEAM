@@ -4,32 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptops.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Tienda Electrónica</title>
+
+    <!-- componentes -->
+    <script src="components/header.js" defer></script>
+    
+    <!-- Router -->
+    <script src="components/router.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Tienda Electrónica</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Tienda</a>
-                    <ul class="dropdown">
-                        <li><a href="pages/celulares.html">Celulares</a></li>
-                        <li><a href="#">Laptops</a></li>
-                        <li><a href="#">Computadoras</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-                <li><a href="#">Acceso</a></li>
-                <li><a href="#">Registro</a></li>
-                <li><span class="cart">🛒 $0.00</span></li>
-            </ul>
-        </nav>
-    </header>
+    <nav-header></nav-header>
 
-    <main>
-        <h2>Bienvenido a la Tienda Electrónica</h2>
-        <p>Seleccioná una categoría del menú para ver los productos.</p>
+    <main id="app">
+        cargando...
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/laptops.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
